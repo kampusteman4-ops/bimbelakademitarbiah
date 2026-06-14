@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Siswa | Akademi Tarbiah</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/detail.css">
+</head>
+<body>
+  <div class="page page-detail">
+    <header class="detail-header">
+      <a href="index.html" class="back-link">←</a>
+      <div>
+        <h1 id="detail-title">Profil</h1>
+        <p id="detail-subtitle"></p>
+      </div>
+    </header>
+
+    <nav class="detail-tabs" role="tablist" aria-label="Menu detail siswa">
+      <button class="tab-button active" data-tab="profil">Profil</button>
+      <button class="tab-button" data-tab="monitoring">Monitoring</button>
+      <button class="tab-button" data-tab="karakter">Karakter</button>
+      <button class="tab-button" data-tab="evaluasi">Evaluasi</button>
+      <button class="tab-button" data-tab="buku">Pesan</button>
+      <button class="tab-button" data-tab="target">Target</button>
+      <button class="tab-button" data-tab="kesimpulan">Kesimpulan</button>
+    </nav>
+
+    <main class="detail-main">
+      <section id="profil" class="tab-panel active"></section>
+      <section id="monitoring" class="tab-panel"></section>
+      <section id="karakter" class="tab-panel"></section>
+      <section id="evaluasi" class="tab-panel"></section>
+      <section id="buku" class="tab-panel"></section>
+      <section id="target" class="tab-panel"></section>
+      <section id="kesimpulan" class="tab-panel"></section>
+    </main>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/detail.js"></script>
+</body>
+</html>
